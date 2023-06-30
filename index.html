@@ -1,0 +1,215 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Jockey+One&family=Merriweather&family=Montserrat:wght@500&family=Philosopher&family=Rajdhani:wght@400;600;700&family=Rubik+Mono+One&family=Russo+One&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png"
+    href="https://static.vecteezy.com/system/resources/previews/019/550/590/original/luffy-s-straw-hat-one-piece-anime-free-vector.jpg"
+    sizes="64x64"/> 
+
+    <link rel="stylesheet" type="text/css" href="../statci/custom.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-black bg-white ">
+        <img src="../static/img/Straw Hats-logos_black.png" alt="logo.img" height="70" width="100">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img decoding="async" src="../static/img/air.png" alt="" class="sliderImg" id="firsts">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
+                
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img decoding="async" src="../static/img/jordan.png" alt="" class="sliderImg" id="jordan">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img decoding="async" src="../static/img/blazer.png" alt="" class="sliderImg" id="thirds">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img decoding="async" src="../static/img/crater.png" alt="" class="sliderImg" id="crater">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img decoding="async" src="../static/img/hippie.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img decoding="async" src="../static/img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img decoding="async" class="featureIcon" src="../static/img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img decoding="async" class="featureIcon" src="../static/img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img decoding="async" class="featureIcon" src="../static/img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img decoding="async" src="../static/img/air.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">$ 199</h2>
+            <p class="productDesc">Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>o
+            </div>
+            <a href="{{ url_for('men') }}" class="productButton">Get Started</a>
+            
+        </div>
+        
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img decoding="async" src="https://images.pexels.com/photos/13159244/pexels-photo-13159244.jpeg"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img decoding="async" src="https://images.pexels.com/photos/2982100/pexels-photo-2982100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img decoding="async" src="https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img decoding="async" src="https://images.pexels.com/photos/34514/spot-runs-start-la.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img decoding="async" src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img decoding="async" src="../static/img/facebook.png" alt="" class="fIcon">
+                    <img decoding="async" src="../static/img/twitter.png" alt="" class="fIcon">
+                    <img decoding="async" src="../static/img/instagram.png" alt="" class="fIcon">
+                    <img decoding="async" src="../static/img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@StrawHats. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../Static/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Jockey+One&family=Merriweather&family=Montserrat:wght@500&family=Philosopher&family=Rajdhani:wght@400;600;700&family=Rubik+Mono+One&family=Russo+One&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Cart</title>
+
+    <link rel="icon" type="image/png"
+    href="https://static.vecteezy.com/system/resources/previews/019/550/590/original/luffy-s-straw-hat-one-piece-anime-free-vector.jpg"
+    sizes="64x64"/>
+
+    <style>
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .navbar{
+    font-size: 1.25rem;
+    font-family: 'Jockey One', sans-serif;
+    padding-right: 10px;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+.cart-items {
+    margin-top: 30px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2196f3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-black bg-white ">
+        <img src="img/Straw Hats-logos_black.png" alt="logo.img" height="70" width="100">
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Cart</a></li>
+            
+        </ul>
+        <ul class="ms-auto">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </ul>
+        
+    </nav>
+
+
+    <h1>Shopping Cart</h1>
+    <div class="cart-items">
+        {% for item in cart_items %}
+        <div class="cart-item">
+            <h3>{{ item.name }}</h3>
+            <p>Price: ${{ item.price }}</p>
+            <form action="/checkout" method="post">
+                <input type="hidden" name="product_id" value="{{ item.id }}">
+                <button type="submit">Remove from Cart</button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="/">Continue Shopping</a>
+    <a href="/checkout">Proceed to Checkout</a>
+</body>
+</html>
